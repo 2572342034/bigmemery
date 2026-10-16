@@ -1,0 +1,22 @@
+fastapi==0.116.1
+uvicorn[standard]==0.35.0
+# starlette 上界必须锁死：mcp 2.x 会把 starlette 顶到 1.x，直接顶坏 FastAPI 0.116
+starlette>=0.40.0,<0.48.0
+langchain==0.3.27
+langchain-core==0.3.72
+langchain-openai==0.3.28
+langchain-ollama==0.3.6
+chromadb==1.0.15
+sqlalchemy==2.0.41
+pymysql==1.1.1
+pydantic==2.11.7
+pydantic-settings==2.10.1
+python-dotenv==1.1.1
+python-multipart==0.0.20
+pypdf==5.9.0
+python-docx==1.2.0
+openpyxl==3.1.5
+
+# MCP（Model Context Protocol）服务端
+# 注意：必须锁 <2，mcp 2.x 要求 starlette>=1.0，与 FastAPI 0.116 不兼容
+mcp==1.30.0

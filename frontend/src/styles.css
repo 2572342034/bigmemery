@@ -1,0 +1,36 @@
+:root {
+  color-scheme: dark;
+  --bg-top: #08111f;
+  --bg-bottom: #15253d;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --line: rgba(148, 163, 184, 0.14);
+  --brand: #38bdf8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans", "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(56, 189, 248, 0.12), transparent 24%),
+    radial-gradient(circle at right center, rgba(59, 130, 246, 0.1), transparent 22%),
+    linear-gradient(160deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
